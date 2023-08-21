@@ -1,0 +1,615 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+/* body{
+    --main-color:#283526;
+    --primary-color:#888888;
+    --button-background:#4b709e;
+    --primary-button-background:#fe7649;
+    --background-color:#eef2f7;
+} */
+
+h1, h2 {
+    font-family: Avenir LT Std;
+    color: var(--main-color);
+}
+
+h4 h3 {
+    font-family: muli;
+    color: var(--main-color);
+}
+
+h3{
+    font-weight: 750;
+    font-size: 2.2rem;
+    line-height: 6rem;
+    text-transform: capitalize;
+}
+
+p,
+a,
+li,
+button {
+    font-family: "muli";
+    color: var(--primary-color);
+}
+
+p{
+    font-size: 1.8rem;
+    line-height: 150%;
+    font-style: normal;
+    font-weight: normal;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li{
+    list-style: none;
+}
+
+button {
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    line-height: 3.6rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+
+
+/* -------------------------------------- OUR MAIN STYLE START HERE --------------------------- */
+
+.first__main{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    height: 150vh;
+    background: rgb(152,150,156);
+    background: linear-gradient(180deg, rgba(152,150,156,1) 30%, rgba(176,176,181,1) 50%, rgba(227,230,232,0.9753151260504201) 98%);
+}
+
+@media (width <= 992) {
+    .first__main{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+        height: 180vh;
+        background: rgb(152,150,156);
+        background: linear-gradient(180deg, rgba(152,150,156,1) 30%, rgba(176,176,181,1) 50%, rgba(227,230,232,0.9753151260504201) 98%);
+    }
+    
+}
+
+.column1{
+    /* border: 2px solid green; */
+    width: 40rem;
+}
+
+.column1 .dotted__logo__img{
+display: flex;
+margin-left: 1rem;
+margin-top: 5rem;
+}
+
+.column1 .dotted__logo__img div{
+padding-left: 1rem;
+}
+
+.column1 .dotted__logo__img img{
+height: 5rem;
+mix-blend-mode: color-burn;
+}
+
+.first__para{
+    font-size: 1.5rem;
+    color: darkred;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.cubdecore__first {
+    font-size: 5rem;
+    margin-left: 1rem;
+    font-weight: 900;
+}
+.cubdecore__first h1:last-child {
+    margin-top: -2rem;
+}
+
+.first__button{
+    border: 1px solid darkred;
+    height: 3.5rem;
+    width: 11rem;
+    border-radius: 25px ;
+    margin-left: 3rem;
+    cursor: pointer;
+}
+.first__button:hover{
+    background-color: darkred;
+}
+
+.first__button p{
+    font-size: 14px;
+    text-align: center;
+    padding-top: 6px;
+}
+.first__button p:hover{
+    color: white;
+}
+
+.first__button1{
+    border: 1px solid darkred;
+    height: 3.5rem;
+    width: 11rem;
+    border-radius: 25px ;
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+.first__button1:hover{
+    background-color: darkred;
+}
+
+.first__button1 p{
+    font-size: 14px;
+    text-align: center;
+    padding-top: 6px;
+}
+.first__button1 p:hover{
+    color: white;
+}
+
+
+.column1 .second__welcome{
+    margin-top: 18rem;
+}
+.column1 .second__welcome h1{
+    font-size: 3rem;
+    margin-left: 1rem;
+}
+.column1 .second__welcome h2{
+    font-size: 2.5rem;
+    margin-left: 1rem;
+    color: rgb(100, 90, 90);
+}
+
+.underline{
+    border-bottom: 1px solid darkred;
+    width: 10rem;
+    margin: 2rem 1rem;
+}
+.underline__right{
+    border-bottom: 1px solid darkred;
+    width: 13rem;
+    margin: 2rem 24rem;
+}
+
+.second__para p{
+    /* border: 1px solid red; */
+    width: 25rem;
+    text-align: justify;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+
+.stone1 {
+    position: absolute;
+    top: 83rem;
+    left: 30rem;
+    height: 25rem;
+}
+.stone2 {
+    position: absolute;
+    top: 87rem;
+    left: 14rem;
+    height: 15rem;
+}
+/* -------------------------------------------------------------- COLUMN CENTER -------------------------------------------------------- */
+.column__center{
+    background-color: darkred;
+    height: 80%;
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.column__center h1{
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+}
+.column__center .halmet__img_first{
+    position: absolute;
+    top: 13rem;
+    filter: drop-shadow(0 -6mm 4mm rgb(66, 64, 64));
+    height: 33rem;
+}
+.column__center .bike__man{
+    position: absolute;
+    margin-right: 5rem;
+    top: 57rem;
+    filter: drop-shadow(0 -3mm 2mm rgb(212, 182, 182));
+    height: 60%;
+    width: 38%;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+nav ul li {
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+    font-size: large;
+}
+
+/* -------------------------------------------------------------- COLUMN RIGHT -------------------------------------------------------- */
+
+.right_column_img{
+    margin-top: 25vh;
+    margin-left: 15rem;
+    display: flex;
+    justify-content: space-around;
+}
+.right_column_img i{
+    margin-top: 7rem;
+    padding: 1rem;
+    font-size: 3rem;
+
+}
+
+.halmet__img_right {
+    height: 20vh;
+}
+
+.ke__metro{
+    margin-left: 20.9rem;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.right__column_second{
+    /* border: 2px solid red; */
+    margin-top: 16rem;
+    /* height: 45vh; */
+}
+.right__column_second .right__column_head h1{
+    margin-left: 28rem;
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.right__column_second .right__column_head h2{
+    margin-left: 21rem;
+    font-size: 3.5rem;
+    color: gray;
+    font-weight: normal;
+}
+
+.third__para p{
+    width: 25rem;
+    text-align: justify;
+    margin-left: 13rem;
+    font-size: 1.5rem;
+}
+
+.first__button2{
+    border: 1px solid darkred;
+    height: 3.5rem;
+    width: 11rem;
+    border-radius: 25px ;
+    margin-left: 20rem;
+    margin-top: 2rem;
+}
+.first__button2:hover{
+    background-color: darkred;
+}
+
+.first__button2 p{
+    font-size: 14px;
+    text-align: center;
+    padding-top: 6px;
+}
+.first__button2 p:hover{
+    color: white;
+}
+
+
+/* -------------------------------------------------------------- PRODUCT CATOGARIES -------------------------------------------------------- */
+
+.product__categories{
+background-color: #b2bfb2;
+margin: auto;
+width: auto;
+height: 120vh;
+}
+
+.second_sec_midcol{
+    width: 115rem;
+    margin: 5rem auto;
+}
+
+.product__categories .produc__name{
+    color: darkred;
+    font-size: 4rem;
+    text-align: center;
+    padding: 6rem 0;
+}
+
+.product__categories .openface{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin: auto;
+   width: 74%;
+}
+.product__categories .openface .openface__head{
+   font-size: 3rem;
+   margin-left: 1rem;
+   color: rgb(80, 9, 9);
+}
+.product__categories .openface .openface__head h1:last-child{
+    font-size: 5rem;
+    text-align: center;
+   margin-left: 1rem;
+}
+.product__categories .openface .openface__para{
+   width: 50rem;
+}
+
+ .vl {
+    border-left: 0.5px solid;
+    padding-left: 5rem;
+    height: 10rem;
+}
+  
+  .openface .openface__icon1{
+      font-size: 5rem;
+      color: rgb(80, 9, 9);
+  }
+
+  
+  .openhelmet__main{
+    width: 70%;
+    height: 70%;
+    display: flex;
+    margin: auto;
+}
+
+.images__all{
+    display: flex;
+    justify-content: center;
+  }
+
+  .images__all .table{
+      height: 17rem;
+    margin-left: 2rem;
+    position: relative;
+    top: 20rem;
+  }
+  
+  .both__helmet{
+    position: relative; 
+    /* top: rem; */
+    bottom: 6rem;
+    left: 14rem;
+}
+
+  .helmet__4 {
+    height: 25rem;
+    transform: rotate(20deg);
+    position: absolute;
+    top: 2rem;
+    left: 30rem;
+  }
+  .helmet__5{
+    height: 25rem;
+    position: relative;
+    right: 8rem;
+  }
+  
+  .gloves{
+      height: 12rem;
+      width: 15rem;
+    position: relative;
+    right: 8rem;
+    top: 3rem;
+}
+
+.goggle{
+    position: relative;
+      left: 15rem;
+      top: 2rem;
+      height: 13rem;
+      width: 15rem;
+    }
+
+
+    /* -------------------------------------------------------------- PRODUCT CATOGARIES -------------------------------------------------------- */
+    
+    .photos{
+        width: auto;
+        height: 30rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+ 
+    .photos img{
+        width: 26.2rem;
+        height: 29.5rem;
+
+    }
+
+
+    /* ------------------------------------------------ FOOTER SECTION START HERE----------------------------------------------------------- */
+
+.lastfooter{
+    /* border: 2px solid red; */
+    background-color: #000000;
+    background-image: linear-gradient(270deg, #000000 0%, #3a3a3a 50%, #000000 100%);
+    height: 30rem;
+    width: auto;
+    margin: 10rem auto 0 auto;
+}
+
+.ekdumlast{
+    /* border: 2px solid red; */
+    height: 30rem;
+    width: 115rem;
+    margin: auto;
+}
+
+.srffooter{
+    display: flex;
+
+    /* justify-content: space-around; */
+    justify-content: space-between;
+}
+
+.footer1{
+    color: #737373;
+    /* border: 2px solid red; */
+    width: 15%;
+    height: 30rem;
+    /* margin-top: 5rem; */
+    padding-top: 5rem;
+}
+
+.footer1 b{
+    color: rgb(213, 17, 17);
+}
+
+.footer2{
+    color: #737373;
+    /* border: 2px solid red; */
+    width: 10%;
+    height: 30rem;
+    padding-top: 4rem;
+}
+
+.footer2 h1{
+    color: #e7e7e7;
+}
+
+.footer3{
+    color: #737373;
+    /* border: 2px solid red; */
+    width: 15%;
+    height: 30rem;
+    padding-top: 4rem;
+}
+
+.footer3 h1{
+    color: #e7e7e7;
+}
+
+.footer4{
+    color: #737373;
+    /* border: 2px solid red; */
+    width: 10%;
+    height: 30rem;
+    padding-top: 4rem;
+}
+
+.footer4 h1{
+    color: #e7e7e7;
+}
+
+.footer5{
+    color: #737373;
+    /* border: 2px solid red; */
+    width: 10%;
+    height: 30rem;
+    padding-top: 4rem;
+}
+
+.footer5 h1{
+    color: #e7e7e7;
+}
+
+.footer6{
+    /* border: 2px solid red; */
+    width: 20%;
+    height: 30rem;
+}
+
+
+
+.footer1 b{
+    font-size: 30px;
+    /* padding-top: 2rem; */
+    color: rgb(213, 17, 17)red;
+}
+
+.footer1 p{
+    font-size: 18px;
+    margin-top: 2rem;
+}
+
+.icons{
+    color: #e7e7e7;
+    /* margin-left: 20px; */
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerlist li{
+    font-size: 15px;
+    padding-top: 1rem;
+}
+
+.footer2 h1{
+    font-size: 17px;
+}
+
+.footer3 h1{
+    font-size: 17px;
+}
+
+.footer4 h1{
+    font-size: 17px;
+}
+
+.footer5 h1{
+    font-size: 17px;
+}
+
+.footerimg{
+    width: 100%;
+    height: 90%;
+    /* padding-top: 3rem; */
+    margin-top: 1rem;
+}
+
+.footerhr{
+    color: blue;
+    margin-top: -2rem;
+}
+
+.footerhrr{
+    margin-top: -0.5px;
+}
+
+    
+    
+
+
+
